@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lina María García Cogollos | Head of People & Talent Director</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            teal: '#298FAA',
+                            tealDark: '#1e6d83',
+                            tealLight: '#eef8fa',
+                            red: '#C00000',
+                            redHover: '#9a0000',
+                            redLight: '#fdf2f2',
+                            dark: '#1e293b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom scrollbar and smooth transitions */
+        html {
+            scroll-behavior: smooth;
+        }
+        .accordion-content {
+            transition: max-height 0.35s ease-out, opacity 0.3s ease-out;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+        }
+        .accordion-content.open {
+            max-height: 1200px;
+            opacity: 1;
+        }
+        .chevron-icon {
+            transition: transform 0.3s ease;
+        }
+        .chevron-icon.rotate {
+            transform: rotate(180deg);
+        }
+        .badge-glow {
+            box-shadow: 0 4px 14px 0 rgba(41, 143, 170, 0.25);
+        }
+        .red-glow {
+            box-shadow: 0 4px 14px 0 rgba(192, 0, 0, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-teal selection:text-white">
+
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-brand-teal text-white flex items-center justify-center font-bold text-xl shadow-md">
+                    LM
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-slate-900 leading-tight">Lina M. García C.</h1>
+                    <p class="text-xs text-brand-teal font-semibold tracking-wide uppercase">Head of People & HR Director</p>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#perfil" class="hover:text-brand-teal transition-colors">Perfil</a>
+                <a href="#metricas" class="hover:text-brand-teal transition-colors">Impacto LATAM</a>
+                <a href="#experiencia" class="hover:text-brand-teal transition-colors">Experiencia</a>
+                <a href="#competencias" class="hover:text-brand-teal transition-colors">Competencias</a>
+                <a href="#educacion" class="hover:text-brand-teal transition-colors">Formación</a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                <a href="https://wa.me/573163351033?text=Hola%20Lina,%20vi%20tu%20portafolio%20profesional%20y%20me%20gustar%C3%ADa%20contactarte." 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="inline-flex items-center space-x-2 bg-brand-red text-white text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-brand-redHover transition-all shadow-md red-glow">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span class="hidden sm:inline">Contactar</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="perfil" class="relative bg-white pt-12 pb-16 border-b border-slate-200 overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-brand-tealLight to-transparent opacity-60 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Left Title Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-brand-tealLight border border-brand-teal/30 text-brand-teal text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <span>Líder de Talento Humano LATAM & Calidad</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                        Lina María <br>
+                        <span class="text-brand-teal">García Cogollos</span>
+                    </h1>
+
+                    <p class="text-lg font-medium text-slate-700">
+                        Psicóloga & Master en Dirección de Recursos Humanos
+                    </p>
+
+                    <!-- Contact Chips Grid -->
+                    <div class="flex flex-wrap gap-2 text-xs sm:text-sm text-slate-600">
+                        <span class="inline-flex items-center space-x-2 bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-lg">
+                            <i class="fa-solid fa-location-dot text-brand-red"></i>
+                            <span class="font-medium">Bogotá, Colombia</span>
+                        </span>
+                        <a href="tel:+573163351033" class="inline-flex items-center space-x-2 bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-lg hover:border-brand-teal transition">
+                            <i class="fa-solid fa-phone text-brand-teal"></i>
+                            <span>+57 316 335 1033</span>
+                        </a>
+                        <a href="mailto:lina.garcia.ps@gmail.com" class="inline-flex items-center space-x-2 bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-lg hover:border-brand-teal transition">
+                            <i class="fa-solid fa-envelope text-brand-teal"></i>
+                            <span>lina.garcia.ps@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/lina-maria-garcia-cogollos-head-of-people/" target="_blank" class="inline-flex items-center space-x-2 bg-brand-teal text-white px-3 py-1.5 rounded-lg font-medium hover:bg-brand-tealDark transition shadow-sm">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                    </div>
+
+                    <!-- Countries Managed Infographic Ribbon -->
+                    <div class="pt-4 border-t border-slate-100">
+                        <p class="text-xs uppercase font-bold tracking-wider text-slate-400 mb-2">Cobertura Estratégica LATAM:</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 text-xs font-semibold">🇨🇴 Colombia</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 text-xs font-semibold">🇵🇦 Panamá</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 text-xs font-semibold">🇧🇴 Bolivia</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 text-xs font-semibold">🇵🇪 Perú</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 text-xs font-semibold">🇪🇨 Ecuador</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 text-xs font-semibold">🇭🇳 Honduras</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 text-xs font-semibold">🇨🇱 Chile</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Executive Summary Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-6 sm:p-8 shadow-xl relative overflow-hidden border border-slate-700">
+                        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-brand-teal/20 rounded-full blur-2xl"></div>
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-8 h-8 rounded-lg bg-brand-red flex items-center justify-center text-white">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Perfil Profesional</h3>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Especialista estratégica con amplia trayectoria en la definición, administración y estandarización de políticas de talento humano, planes de compensación y beneficios, desarrollo organizacional, gestión del cambio y calidad.
+                        </p>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Experiencia probada en la administración de presupuestos regionales LATAM, construcción de indicadores KPIs de gestión, legislación laboral multicultural y auditorías Trinorma (<strong class="text-white">ISO 9001:2015, ISO 14001, OHSAS 18001 / ISO 45001</strong>).
+                        </p>
+                        <div class="pt-4 border-t border-slate-700/80 flex items-center justify-between text-xs text-slate-400">
+                            <span><i class="fa-solid fa-shield-halved text-brand-teal mr-1"></i> Auditorías Internas & Externa</span>
+                            <span><i class="fa-solid fa-chart-line text-brand-teal mr-1"></i> Enfoque en Resultados</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="metricas" class="py-16 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-red font-bold text-xs uppercase tracking-widest">Indicadores de Impacto</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Logros Cuantitativos & Gestión de Alto Rendimiento</h2>
+                <div class="w-16 h-1 bg-brand-teal mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <!-- Grid of Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Metric 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:border-brand-teal transition-all group">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-tealLight text-brand-teal flex items-center justify-center text-xl font-bold group-hover:bg-brand-teal group-hover:text-white transition">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <span class="text-3xl font-extrabold text-brand-teal">115%</span>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base mb-1">Sobre Ejecución de Metas</h3>
+                    <p class="text-xs text-slate-600 leading-normal">
+                        Superación de meta de ingresos presupuestados (2020-2021) mediante nuevas estrategias tecnológicas desplegadas en Grupo Andino TV.
+                    </p>
+                </div>
+
+                <!-- Metric 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:border-brand-teal transition-all group">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-red-50 text-brand-red flex items-center justify-center text-xl font-bold group-hover:bg-brand-red group-hover:text-white transition">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+                        <span class="text-3xl font-extrabold text-brand-red">+75%</span>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base mb-1">Aumento de Productividad</h3>
+                    <p class="text-xs text-slate-600 leading-normal">
+                        Incremento de eficiencia en equipo administrativo de Grupo CPZ tras 3 meses de seguimiento individualizado y por áreas.
+                    </p>
+                </div>
+
+                <!-- Metric 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:border-brand-teal transition-all group">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-tealLight text-brand-teal flex items-center justify-center text-xl font-bold group-hover:bg-brand-teal group-hover:text-white transition">
+                            <i class="fa-solid fa-users-gear"></i>
+                        </div>
+                        <span class="text-3xl font-extrabold text-brand-teal">6,000+</span>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base mb-1">Colaboradores Evaluados</h3>
+                    <p class="text-xs text-slate-600 leading-normal">
+                        Evaluación de desempeño por competencias desplegada al 100% de la población nacional en 31 sedes de la Universidad Antonio Nariño.
+                    </p>
+                </div>
+
+                <!-- Metric 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:border-brand-teal transition-all group">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-red-50 text-brand-red flex items-center justify-center text-xl font-bold group-hover:bg-brand-red group-hover:text-white transition">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <span class="text-3xl font-extrabold text-brand-red">80%</span>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base mb-1">Participación en Formación</h3>
+                    <p class="text-xs text-slate-600 leading-normal">
+                        Creación de área de Desarrollo LATAM en Kortabaco Group, logrando alta adhesión en habilidades técnicas, comerciales y directivas.
+                    </p>
+                </div>
+
+                <!-- Metric 5 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:border-brand-teal transition-all group">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-tealLight text-brand-teal flex items-center justify-center text-xl font-bold group-hover:bg-brand-teal group-hover:text-white transition">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <span class="text-3xl font-extrabold text-brand-teal">106%</span>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base mb-1">Cumplimiento en Capacitación</h3>
+                    <p class="text-xs text-slate-600 leading-normal">
+                        Superación de metas de indicadores de formación y desarrollo a nivel nacional en el Consejo Colombiano de Seguridad.
+                    </p>
+                </div>
+
+                <!-- Metric 6 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:border-brand-teal transition-all group">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-red-50 text-brand-red flex items-center justify-center text-xl font-bold group-hover:bg-brand-red group-hover:text-white transition">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                        </div>
+                        <span class="text-3xl font-extrabold text-brand-red">20+</span>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base mb-1">Empresas Fidelizadas</h3>
+                    <p class="text-xs text-slate-600 leading-normal">
+                        Diversificación de portafolio y fidelización de PYMEs y grandes empresas en la región andina.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8">
+                <div>
+                    <span class="text-brand-teal font-bold text-xs uppercase tracking-widest">Trayectoria Profesional</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Experiencia Laboral Detallada</h2>
+                </div>
+                <div class="mt-4 sm:mt-0 flex space-x-2">
+                    <button onclick="toggleAllAccordions(true)" class="text-xs font-semibold px-3 py-1.5 rounded bg-slate-100 hover:bg-slate-200 text-slate-700 transition">
+                        <i class="fa-solid fa-angles-down mr-1"></i> Expandir Todo
+                    </button>
+                    <button onclick="toggleAllAccordions(false)" class="text-xs font-semibold px-3 py-1.5 rounded bg-slate-100 hover:bg-slate-200 text-slate-700 transition">
+                        <i class="fa-solid fa-angles-up mr-1"></i> Colapsar Todo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Accordion Items Container -->
+            <div class="space-y-4">
+
+                <!-- Job Item 1 -->
+                <div class="border border-slate-200 rounded-xl bg-white overflow-hidden shadow-sm">
+                    <button onclick="toggleAccordion('job-1')" class="w-full text-left p-5 flex items-start justify-between bg-slate-50 hover:bg-slate-100/80 transition focus:outline-none">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-teal text-white flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-base sm:text-lg">Directora de Talento Humano y Calidad Administrativa</h3>
+                                <p class="text-sm font-semibold text-brand-teal">Clínica Veterinaria Dover & Alianzas Estratégicas</p>
+                                <p class="text-xs text-slate-500 mt-0.5"><i class="fa-regular fa-calendar-alt mr-1"></i> Feb. 2024 - Actualidad</p>
+                            </div>
+                        </div>
+                        <i id="job-1-chevron" class="fa-solid fa-chevron-down text-slate-400 text-sm mt-2 chevron-icon"></i>
+                    </button>
+                    <div id="job-1" class="accordion-content px-6 py-5 border-t border-slate-100 space-y-4">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-slate-400 tracking-wider mb-2">Responsabilidades Clave:</h4>
+                            <ul class="list-disc list-inside text-sm text-slate-700 space-y-1">
+                                <li>Estructurar de manera integral todo el proceso de Talento Humano de las sedes de Clínica Dover y sus alianzas estratégicas.</li>
+                                <li>Definir y ajustar planes de compensación y programas de beneficios competitivos.</li>
+                                <li>Diseñar e implementar procesos estratégicos asociados al desarrollo clínico de la organización.</li>
+                                <li>Diseño, implementación y seguimiento de programas de inducción, capacitación, evaluación de desempeño y clima organizacional.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-brand-tealLight p-3.5 rounded-lg border border-brand-teal/20">
+                            <h4 class="text-xs font-bold uppercase text-brand-teal tracking-wider mb-1"><i class="fa-solid fa-trophy mr-1"></i> Logro Destacado:</h4>
+                            <p class="text-xs text-slate-700">Identificación y diseño de una cultura de alto desempeño adaptada a los constantes cambios de la organización, orientada al cumplimiento riguroso de objetivos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Item 2 -->
+                <div class="border border-slate-200 rounded-xl bg-white overflow-hidden shadow-sm">
+                    <button onclick="toggleAccordion('job-2')" class="w-full text-left p-5 flex items-start justify-between bg-slate-50 hover:bg-slate-100/80 transition focus:outline-none">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-red text-white flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
+                                <i class="fa-solid fa-earth-americas"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-base sm:text-lg">Gerente Recursos Humanos LATAM & Consultor Talento</h3>
+                                <p class="text-sm font-semibold text-brand-teal">Kortabaco Group</p>
+                                <p class="text-xs text-slate-500 mt-0.5"><i class="fa-regular fa-calendar-alt mr-1"></i> Feb. 2022 - Aug. 2023 | Consultor desde Jun. 2025 - Actualmente</p>
+                            </div>
+                        </div>
+                        <i id="job-2-chevron" class="fa-solid fa-chevron-down text-slate-400 text-sm mt-2 chevron-icon"></i>
+                    </button>
+                    <div id="job-2" class="accordion-content px-6 py-5 border-t border-slate-100 space-y-4">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-slate-400 tracking-wider mb-2">Responsabilidades Clave:</h4>
+                            <ul class="list-disc list-inside text-sm text-slate-700 space-y-1">
+                                <li>Definir Reglamentos Internos a nivel LATAM con base en la normativa laboral de cada país (Bolivia, Honduras, Perú, Chile, Panamá, Colombia).</li>
+                                <li>Ajustar estructura salarial y planes de beneficios regionales para garantizar competitividad.</li>
+                                <li>Crear el área de Formación y Desarrollo desde cero en cada una de las operaciones del grupo.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-red-50 p-3.5 rounded-lg border border-brand-red/20">
+                            <h4 class="text-xs font-bold uppercase text-brand-red tracking-wider mb-1"><i class="fa-solid fa-trophy mr-1"></i> Logro Destacado:</h4>
+                            <p class="text-xs text-slate-700">Alcancé un 80% de participación del personal de la región en programas de formación de habilidades técnicas, comerciales y directivas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Item 3 -->
+                <div class="border border-slate-200 rounded-xl bg-white overflow-hidden shadow-sm">
+                    <button onclick="toggleAccordion('job-3')" class="w-full text-left p-5 flex items-start justify-between bg-slate-50 hover:bg-slate-100/80 transition focus:outline-none">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-teal text-white flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
+                                <i class="fa-solid fa-tv"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-base sm:text-lg">Global Human Resources Manager</h3>
+                                <p class="text-sm font-semibold text-brand-teal">Grupo Andino de Televisión</p>
+                                <p class="text-xs text-slate-500 mt-0.5"><i class="fa-regular fa-calendar-alt mr-1"></i> Jul. 2017 - Jul. 2022</p>
+                            </div>
+                        </div>
+                        <i id="job-3-chevron" class="fa-solid fa-chevron-down text-slate-400 text-sm mt-2 chevron-icon"></i>
+                    </button>
+                    <div id="job-3" class="accordion-content px-6 py-5 border-t border-slate-100 space-y-4">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-slate-400 tracking-wider mb-2">Responsabilidades Clave:</h4>
+                            <ul class="list-disc list-inside text-sm text-slate-700 space-y-1">
+                                <li>Diseñar los procesos integrales de Recursos Humanos, Sistemas de Calidad y planes de entrenamiento en Perú, Colombia y Ecuador.</li>
+                                <li>Auditar empresas aliadas en normas internacionales ISO 9001 y ISO 45001.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-brand-tealLight p-3.5 rounded-lg border border-brand-teal/20">
+                            <h4 class="text-xs font-bold uppercase text-brand-teal tracking-wider mb-1"><i class="fa-solid fa-trophy mr-1"></i> Logros Destacados:</h4>
+                            <p class="text-xs text-slate-700 mb-1">• Sobre ejecución del 115% de la meta de ingresos presupuestados (2020 - 2021) implementando nuevas estrategias tecnológicas de despliegue.</p>
+                            <p class="text-xs text-slate-700 mb-1">• Fidelización de más de 20 compañías entre PYMEs y grandes empresas.</p>
+                            <p class="text-xs text-slate-700">• Diseño e implementación de la Escuela de Liderazgo replicada internacionalmente.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Item 4 -->
+                <div class="border border-slate-200 rounded-xl bg-white overflow-hidden shadow-sm">
+                    <button onclick="toggleAccordion('job-4')" class="w-full text-left p-5 flex items-start justify-between bg-slate-50 hover:bg-slate-100/80 transition focus:outline-none">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-red text-white flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
+                                <i class="fa-solid fa-building-circle-check"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-base sm:text-lg">Quality & Human Talent Manager</h3>
+                                <p class="text-sm font-semibold text-brand-teal">Grupo CPZ</p>
+                                <p class="text-xs text-slate-500 mt-0.5"><i class="fa-regular fa-calendar-alt mr-1"></i> Sep. 2019 - Nov. 2020</p>
+                            </div>
+                        </div>
+                        <i id="job-4-chevron" class="fa-solid fa-chevron-down text-slate-400 text-sm mt-2 chevron-icon"></i>
+                    </button>
+                    <div id="job-4" class="accordion-content px-6 py-5 border-t border-slate-100 space-y-4">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-slate-400 tracking-wider mb-2">Responsabilidades Clave:</h4>
+                            <ul class="list-disc list-inside text-sm text-slate-700 space-y-1">
+                                <li>Ajuste e implementación de procesos bajo la norma ISO 9001:2015.</li>
+                                <li>Liderazgo de proyectos de coaching individual, clima organizacional y Batería de Riesgo Psicosocial.</li>
+                                <li>Auditorías internas en ISO 45001 e ISO 14001.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-red-50 p-3.5 rounded-lg border border-brand-red/20">
+                            <h4 class="text-xs font-bold uppercase text-brand-red tracking-wider mb-1"><i class="fa-solid fa-trophy mr-1"></i> Logro Destacado:</h4>
+                            <p class="text-xs text-slate-700">Aumento de productividad del equipo administrativo en un 75% e implementación con éxito de protocolos de bioseguridad COVID-19 (95% cumplimiento) garantizando certificación ISO 9001 en 2020.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Item 5 -->
+                <div class="border border-slate-200 rounded-xl bg-white overflow-hidden shadow-sm">
+                    <button onclick="toggleAccordion('job-5')" class="w-full text-left p-5 flex items-start justify-between bg-slate-50 hover:bg-slate-100/80 transition focus:outline-none">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-teal text-white flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-base sm:text-lg">Directora de Recursos Humanos</h3>
+                                <p class="text-sm font-semibold text-brand-teal">Editorial Libros & Libros</p>
+                                <p class="text-xs text-slate-500 mt-0.5"><i class="fa-regular fa-calendar-alt mr-1"></i> Jul. 2018 - Jul. 2019</p>
+                            </div>
+                        </div>
+                        <i id="job-5-chevron" class="fa-solid fa-chevron-down text-slate-400 text-sm mt-2 chevron-icon"></i>
+                    </button>
+                    <div id="job-5" class="accordion-content px-6 py-5 border-t border-slate-100 space-y-4">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-slate-400 tracking-wider mb-2">Responsabilidades Clave:</h4>
+                            <ul class="list-disc list-inside text-sm text-slate-700 space-y-1">
+                                <li>Estandarización de proyectos de GH en 11 agencias nacionales y sede principal Bogotá.</li>
+                                <li>Implementación de políticas de bienestar, evaluación de desempeño y salario emocional.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-brand-tealLight p-3.5 rounded-lg border border-brand-teal/20">
+                            <h4 class="text-xs font-bold uppercase text-brand-teal tracking-wider mb-1"><i class="fa-solid fa-trophy mr-1"></i> Logro Destacado:</h4>
+                            <p class="text-xs text-slate-700">Mejora del 55% en la percepción del indicador de satisfacción del área de GH y entrenamiento del 100% del personal operativo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Item 6 -->
+                <div class="border border-slate-200 rounded-xl bg-white overflow-hidden shadow-sm">
+                    <button onclick="toggleAccordion('job-6')" class="w-full text-left p-5 flex items-start justify-between bg-slate-50 hover:bg-slate-100/80 transition focus:outline-none">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-red text-white flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-base sm:text-lg">Líder de Desarrollo Humano</h3>
+                                <p class="text-sm font-semibold text-brand-teal">Universidad Antonio Nariño</p>
+                                <p class="text-xs text-slate-500 mt-0.5"><i class="fa-regular fa-calendar-alt mr-1"></i> Ago. 2017 - Dic. 2017</p>
+                            </div>
+                        </div>
+                        <i id="job-6-chevron" class="fa-solid fa-chevron-down text-slate-400 text-sm mt-2 chevron-icon"></i>
+                    </button>
+                    <div id="job-6" class="accordion-content px-6 py-5 border-t border-slate-100 space-y-4">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-slate-400 tracking-wider mb-2">Responsabilidades Clave:</h4>
+                            <ul class="list-disc list-inside text-sm text-slate-700 space-y-1">
+                                <li>Alineación de procedimientos con estándares ISO 9001:2015 y acreditación de Educación Superior.</li>
+                                <li>Diseño del proceso de evaluación por competencias para el personal virtual.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-red-50 p-3.5 rounded-lg border border-brand-red/20">
+                            <h4 class="text-xs font-bold uppercase text-brand-red tracking-wider mb-1"><i class="fa-solid fa-trophy mr-1"></i> Logro Destacado:</h4>
+                            <p class="text-xs text-slate-700">Ejecución de evaluación de desempeño por competencias al 100% de la población (6,000 empleados en 31 sedes) y mejora del clima laboral en un 25%.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Item 7 -->
+                <div class="border border-slate-200 rounded-xl bg-white overflow-hidden shadow-sm">
+                    <button onclick="toggleAccordion('job-7')" class="w-full text-left p-5 flex items-start justify-between bg-slate-50 hover:bg-slate-100/80 transition focus:outline-none">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-teal text-white flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
+                                <i class="fa-solid fa-shield"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-base sm:text-lg">Líder de Desarrollo y Bienestar</h3>
+                                <p class="text-sm font-semibold text-brand-teal">Consejo Colombiano de Seguridad (CCS)</p>
+                                <p class="text-xs text-slate-500 mt-0.5"><i class="fa-regular fa-calendar-alt mr-1"></i> Jul. 2014 - Jul. 2017</p>
+                            </div>
+                        </div>
+                        <i id="job-7-chevron" class="fa-solid fa-chevron-down text-slate-400 text-sm mt-2 chevron-icon"></i>
+                    </button>
+                    <div id="job-7" class="accordion-content px-6 py-5 border-t border-slate-100 space-y-4">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-slate-400 tracking-wider mb-2">Responsabilidades Clave:</h4>
+                            <ul class="list-disc list-inside text-sm text-slate-700 space-y-1">
+                                <li>Alineación con Certificación Trinorma (ISO 9001, ISO 14001, OHSAS 18001).</li>
+                                <li>Coordinación nacional de selección, capacitación presencial/virtual, SST y comités de convivencia.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-brand-tealLight p-3.5 rounded-lg border border-brand-teal/20">
+                            <h4 class="text-xs font-bold uppercase text-brand-teal tracking-wider mb-1"><i class="fa-solid fa-trophy mr-1"></i> Logro Destacado:</h4>
+                            <p class="text-xs text-slate-700">Certificación Trinorma garantizada por 4 años consecutivos y 106% de cumplimiento en indicadores de capacitación.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Item 8 -->
+                <div class="border border-slate-200 rounded-xl bg-white overflow-hidden shadow-sm">
+                    <button onclick="toggleAccordion('job-8')" class="w-full text-left p-5 flex items-start justify-between bg-slate-50 hover:bg-slate-100/80 transition focus:outline-none">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-red text-white flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-base sm:text-lg">Especialista en Formación</h3>
+                                <p class="text-sm font-semibold text-brand-teal">Cafam Caja de Compensación</p>
+                                <p class="text-xs text-slate-500 mt-0.5"><i class="fa-regular fa-calendar-alt mr-1"></i> Jul. 2011 - May 2014</p>
+                            </div>
+                        </div>
+                        <i id="job-8-chevron" class="fa-solid fa-chevron-down text-slate-400 text-sm mt-2 chevron-icon"></i>
+                    </button>
+                    <div id="job-8" class="accordion-content px-6 py-5 border-t border-slate-100 space-y-4">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-slate-400 tracking-wider mb-2">Responsabilidades Clave:</h4>
+                            <ul class="list-disc list-inside text-sm text-slate-700 space-y-1">
+                                <li>Diseño e intervención de programas de formación para empresas afiliadas y atención psicológica individual/grupal.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-red-50 p-3.5 rounded-lg border border-brand-red/20">
+                            <h4 class="text-xs font-bold uppercase text-brand-red tracking-wider mb-1"><i class="fa-solid fa-trophy mr-1"></i> Logro Destacado:</h4>
+                            <p class="text-xs text-slate-700">Cumplimiento del 100% de las necesidades de entrenamiento de las empresas clientes asignadas.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="competencias" class="py-16 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-red font-bold text-xs uppercase tracking-widest">Especialidades</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Habilidades & Competencias Clave</h2>
+                <div class="w-16 h-1 bg-brand-teal mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Pillar 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-brand-tealLight text-brand-teal flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-chess-king"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">Liderazgo & Estrategia</h3>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal mr-2 text-xs"></i> Gerencia Estratégica LATAM</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal mr-2 text-xs"></i> Head of People Leadership</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal mr-2 text-xs"></i> Gestión de Presupuestos</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal mr-2 text-xs"></i> Cultura de Alto Desempeño</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal mr-2 text-xs"></i> Gestión del Cambio</li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-red-50 text-brand-red flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">Calidad & Sistemas ISO</h3>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-2 text-xs"></i> Sistema de Calidad ISO 9001:2015</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-2 text-xs"></i> Auditorías Trinorma (45001 / 14001)</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-2 text-xs"></i> Batería de Riesgo Psicosocial</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-2 text-xs"></i> Legislación Laboral LATAM</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-red mr-2 text-xs"></i> Seguridad & Salud en el Trabajo</li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-brand-tealLight text-brand-teal flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">Tecnología & Idiomas</h3>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal mr-2 text-xs"></i> IA Aplicada a Recursos Humanos</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal mr-2 text-xs"></i> Planificación ERP Empresarial</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal mr-2 text-xs"></i> Indicadores KPIs y Analítica</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal mr-2 text-xs"></i> Español: Nativo</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-brand-teal mr-2 text-xs"></i> Inglés: Nivel B1 Intermedio</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="educacion" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-teal font-bold text-xs uppercase tracking-widest">Preparación de Excelencia</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Formación Académica & Posgrados</h2>
+                <div class="w-16 h-1 bg-brand-red mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative border-l-2 border-slate-200 ml-4 md:ml-32 space-y-8">
+
+                <!-- Edu 1 -->
+                <div class="relative pl-6 md:pl-8">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-red border-4 border-white shadow"></div>
+                    <div class="md:absolute md:-left-36 md:top-1 md:text-right md:w-28 text-xs font-bold text-brand-red uppercase">
+                        2025
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-brand-teal transition">
+                        <h3 class="font-bold text-slate-900 text-base">Master en Inteligencia Artificial Aplicada</h3>
+                        <p class="text-xs text-brand-teal font-semibold">Escuela de Negocios de Barcelona (ENEB)</p>
+                    </div>
+                </div>
+
+                <!-- Edu 2 -->
+                <div class="relative pl-6 md:pl-8">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-teal border-4 border-white shadow"></div>
+                    <div class="md:absolute md:-left-36 md:top-1 md:text-right md:w-28 text-xs font-bold text-brand-teal uppercase">
+                        2024
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-brand-teal transition">
+                        <h3 class="font-bold text-slate-900 text-base">Maestría Internacional en Seguridad y Salud en el Trabajo</h3>
+                        <p class="text-xs text-brand-teal font-semibold">Esneca Business School - España</p>
+                    </div>
+                </div>
+
+                <!-- Edu 3 -->
+                <div class="relative pl-6 md:pl-8">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-400 border-4 border-white shadow"></div>
+                    <div class="md:absolute md:-left-36 md:top-1 md:text-right md:w-28 text-xs font-bold text-slate-500 uppercase">
+                        2021
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-brand-teal transition">
+                        <h3 class="font-bold text-slate-900 text-base">Master en Dirección Comercial y Marketing Digital</h3>
+                        <p class="text-xs text-brand-teal font-semibold">Escuela de Negocios de Barcelona (ENEB)</p>
+                    </div>
+                </div>
+
+                <!-- Edu 4 -->
+                <div class="relative pl-6 md:pl-8">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-400 border-4 border-white shadow"></div>
+                    <div class="md:absolute md:-left-36 md:top-1 md:text-right md:w-28 text-xs font-bold text-slate-500 uppercase">
+                        2016
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-brand-teal transition">
+                        <h3 class="font-bold text-slate-900 text-base">MBA con Énfasis en Finanzas y Administración de Empresas</h3>
+                        <p class="text-xs text-brand-teal font-semibold">ITEAP - España</p>
+                    </div>
+                </div>
+
+                <!-- Edu 5 -->
+                <div class="relative pl-6 md:pl-8">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-400 border-4 border-white shadow"></div>
+                    <div class="md:absolute md:-left-36 md:top-1 md:text-right md:w-28 text-xs font-bold text-slate-500 uppercase">
+                        2014
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-brand-teal transition">
+                        <h3 class="font-bold text-slate-900 text-base">Master en Dirección de Recursos Humanos</h3>
+                        <p class="text-xs text-brand-teal font-semibold">ITEAP - España</p>
+                    </div>
+                </div>
+
+                <!-- Edu 6 -->
+                <div class="relative pl-6 md:pl-8">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-red border-4 border-white shadow"></div>
+                    <div class="md:absolute md:-left-36 md:top-1 md:text-right md:w-28 text-xs font-bold text-brand-red uppercase">
+                        2009
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 hover:border-brand-teal transition">
+                        <h3 class="font-bold text-slate-900 text-base">Profesional en Psicología</h3>
+                        <p class="text-xs text-brand-teal font-semibold">Universidad El Bosque - Bogotá, Colombia</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+                <h3 class="text-lg font-bold text-white">Lina María García Cogollos</h3>
+                <p class="text-xs text-slate-400">Head of People | Directora de Recursos Humanos & Calidad LATAM</p>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-4 text-xs">
+                <a href="mailto:lina.garcia.ps@gmail.com" class="text-slate-300 hover:text-white transition"><i class="fa-solid fa-envelope text-brand-teal mr-1"></i> lina.garcia.ps@gmail.com</a>
+                <a href="tel:+573163351033" class="text-slate-300 hover:text-white transition"><i class="fa-solid fa-phone text-brand-teal mr-1"></i> +57 316 3351033</a>
+                <a href="https://www.linkedin.com/in/lina-maria-garcia-cogollos-head-of-people/" target="_blank" class="text-slate-300 hover:text-white transition"><i class="fa-brands fa-linkedin text-brand-teal mr-1"></i> LinkedIn</a>
+            </div>
+
+            <p class="text-xs text-slate-500">
+                &copy; 2026 Portafolio Profesional. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/573163351033?text=Hola%20Lina,%20he%20revisado%20tu%20portafolio%20profesional%20y%20me%20gustar%C3%ADa%20conversar%20contigo." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Contactar por WhatsApp"
+       class="fixed bottom-6 right-6 z-50 bg border-2 border-white text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 group"
+       style="background-color: #25D366;">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span class="absolute right-16 bg-slate-900 text-white text-xs font-semibold px-3 py-1.5 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+            ¡Escríbeme por WhatsApp!
+        </span>
+    </a>
+
+    <script>
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            const chevron = document.getElementById(id + '-chevron');
+            
+            if (content.classList.contains('open')) {
+                content.classList.remove('open');
+                chevron.classList.remove('rotate');
+            } else {
+                content.classList.add('open');
+                chevron.classList.add('rotate');
+            }
+        }
+
+        function toggleAllAccordions(openState) {
+            const items = ['job-1', 'job-2', 'job-3', 'job-4', 'job-5', 'job-6', 'job-7', 'job-8'];
+            items.forEach(id => {
+                const content = document.getElementById(id);
+                const chevron = document.getElementById(id + '-chevron');
+                if (content && chevron) {
+                    if (openState) {
+                        content.classList.add('open');
+                        chevron.classList.add('rotate');
+                    } else {
+                        content.classList.remove('open');
+                        chevron.classList.remove('rotate');
+                    }
+                }
+            });
+        }
+
+        // Open first job accordion by default
+        document.addEventListener('DOMContentLoaded', () => {
+            toggleAccordion('job-1');
+        });
+    </script>
+</body>
+</html>
